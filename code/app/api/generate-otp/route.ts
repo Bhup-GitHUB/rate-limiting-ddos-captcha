@@ -16,4 +16,8 @@ export async function POST(request: NextRequest) {
   otpStore[email] = otp;
 
   console.log(`Generated OTP for ${email}: ${otp}`);
+
+  return NextResponse.json({
+    message: "OTP generated successfully and you are logged in ",
+  });
 }
