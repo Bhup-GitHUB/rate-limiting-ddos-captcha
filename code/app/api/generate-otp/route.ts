@@ -13,6 +13,7 @@ export async function POST(request: NextRequest) {
   }
 
   const otp = Math.floor(100000 + Math.random() * 900000).toString(); //generate a 6-digit OTP
+  console.log(`Generated OTP: ${otp}`);
   otpStore[email] = otp;
 
   console.log(`Generated OTP for ${email}: ${otp}`);
