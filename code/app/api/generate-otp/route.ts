@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const otpStore: Record<string, string> = {};
+export const otpStore: Record<string, string> = {};
 
 export async function POST(request: NextRequest) {
   const body = await request.json();
