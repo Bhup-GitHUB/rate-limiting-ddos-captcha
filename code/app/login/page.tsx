@@ -11,7 +11,7 @@ export default function LoginPage() {
   };
 
   const handleLogin = async (event: React.FormEvent) => {
-    event.preventDefault(); // Prevent the form from reloading the page
+    event.preventDefault();
 
     if (!email) {
       setErrorMessage("Email is required");
@@ -19,8 +19,7 @@ export default function LoginPage() {
     }
 
     setLoading(true);
-    setErrorMessage(""); // Clear previous error message
-
+    setErrorMessage("");
     try {
       const response = await fetch("/api/generate-otp", {
         method: "POST",
@@ -33,9 +32,9 @@ export default function LoginPage() {
       const data = await response.json();
 
       if (response.ok) {
-        alert(data.message); // Show success message or handle it however you want
+        alert(data.message);
       } else {
-        setErrorMessage(data.message); // Show error message from API
+        setErrorMessage(data.message);
       }
     } catch (error) {
       console.error("Error:", error);
