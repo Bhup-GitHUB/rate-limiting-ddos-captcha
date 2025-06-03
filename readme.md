@@ -1,2 +1,2 @@
-![Attack and Password Reset](attack/attack.png)
-![Attack and Password Reset](attack/password-reset.png)
+![Attack and Password Reset](code/attack.png)
+![Attack and Password Reset](code/password-reset.png)
