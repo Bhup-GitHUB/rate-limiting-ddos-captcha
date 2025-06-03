@@ -3,7 +3,7 @@ import axios from "axios";
 // Function to send a single request
 async function sendRequest(otp: string) {
   const data = JSON.stringify({
-    email: "harkirat@gmail.com",
+    email: "dasdas@gmail.com",
     otp: otp,
     newPassword: "123123123",
   });
@@ -11,7 +11,7 @@ async function sendRequest(otp: string) {
   const config = {
     method: "post",
     maxBodyLength: Infinity,
-    url: "http://localhost:3000/reset_password",
+    url: "http://localhost:3000/reset-password",
     headers: {
       "Content-Type": "application/json",
     },
@@ -39,4 +39,4 @@ spamOTPs();
 */
 
 // Send request with the specific OTP: 489366
-sendRequest("489366");
+sendRequest("755240");
