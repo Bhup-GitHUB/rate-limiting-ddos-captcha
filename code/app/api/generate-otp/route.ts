@@ -36,3 +36,6 @@ export async function POST(request: NextRequest) {
     message: "OTP generated successfully and you are logged in",
   });
 }
+
+//for ddos u can use cloudflare
+// for blocking some country or specific ip use WAF like cloudflare
