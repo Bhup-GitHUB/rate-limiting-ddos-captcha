@@ -25,7 +25,7 @@ function sendRequest(otp) {
         const config = {
             method: "post",
             maxBodyLength: Infinity,
-            url: "http://localhost:3000/reset-password",
+            url: "http://localhost:3000/api/reset-password",
             headers: {
                 "Content-Type": "application/json",
             },
@@ -52,4 +52,4 @@ async function spamOTPs() {
 spamOTPs();
 */
 // Send request with the specific OTP: 489366
-sendRequest("755240");
+sendRequest("627209");
